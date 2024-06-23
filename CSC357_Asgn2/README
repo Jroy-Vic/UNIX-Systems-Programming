@@ -1,0 +1,5 @@
+Roy Vicerra (rvicerra)
+
+Special Instructions: There are no special instructions. However there is no implementation of -n in the program. I have included a testFile that I used to test the program.
+
+Comments: Unfortunately, I could not get this project finished in time. I did still make a significant amount of progress nonetheless. I created the entirety of hash.c, which allows me to create a hashtable that can automatically resize itself whenever it deems necessary after some inserted data. I also created a function in rll.c that allows me to read every word in a line, which when paired with rdline() can be powerful. Sadly, I just could not get fw.c to read each line correctly and place it into the hashmap. Using the command line as the input, however, works perfectly. I made some memory leak issues along the way and I spent most of my time fixing it. I was not able to begin working on finding the greatest frequencies either. I apologize for my work and I aim to do much better on the next assignment. Thank you.

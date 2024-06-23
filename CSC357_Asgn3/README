@@ -1,0 +1,5 @@
+Name: Roy Vicerra (rvicerra)
+
+Special Instructions: I only have hencode.c, and it does not fully translate the file to the Huffman codes. It does, however, create a complete header byte.
+
+Extra Comments: I have only submitted hencode.c. The actual Huffman encoding took me quite a while. I definitely tried the best that I could do with this project. Looking back, I complicated a lot of things but I was too far gone to restart, causing me to take a long time. I hope you can understand, and thank you for your patience. 

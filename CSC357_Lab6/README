@@ -1,0 +1,10 @@
+Name: Roy Vicerra (rvicerra)
+
+Special Instructions: There are no special instructions. 
+	The Makefile includes "make all" and "make timeit".
+	I included extra error messages for clarity.
+
+Extra Comments: This lab was conceptually very fun! I enjoyed 
+		how it is the same process as handling an
+ 		interrupt--I have been waiting for the past 6 
+		weeks to learn it since you told me about it.

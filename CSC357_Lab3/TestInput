@@ -1,0 +1,4 @@
+This is a test file to verify the functionality of the htable program.
+So far as of writing this, the program is able to sort all characters into a linkedlist and place into a binary tree.
+I am hoping that this test file will work and I am just using it to debug the program.
+Let us hope for the best!

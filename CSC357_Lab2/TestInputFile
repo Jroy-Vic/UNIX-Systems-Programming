@@ -1,0 +1,44 @@
+/* Hello, my name is Roy Vicerra.
+This is just a test.
+I am writing a test to ensure my uniq program is working correctly.
+But
+How
+Do
+I
+Know
+This works?
+
+Test 1:
+*Test 1:
+Did you see that?
+*Did you see that?
+**Did you see that?
+I typed "Did you see that?" three times!
+Hopefully it works
+I hope that its good
+*I hope that its good
+I know its good 
+*/
+
+
+
+Hello, my name is Roy Vicerra.
+This is just a test.
+I am writing a test to ensure my uniq program is working correctly.
+But
+How
+Do
+I
+Know
+This works?
+
+Test 1:
+Test 1:
+Did you see that?
+Did you see that?
+Did you see that?
+I typed "Did you see that?" three times!
+Hopefully it works
+I hope that its good
+I hope that its good
+I know that its good 

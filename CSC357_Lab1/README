@@ -1,0 +1,20 @@
+CSC 357-01 - Lab 01 - README
+
+Name: Roy Vicerra (rvicerra)
+Instructions: Compiled to output file named "lab01.out"
+Questions:
+
+1) Which machine did you choose?
+	- unix1
+
+2) Which manual page did you read? Did you learn anything useful?
+	- I read the RM(1) section of the manual. I was trying to figure out how to delete a file and reading this section helped me out. Three useful commands I learned are -f (forces the removal despite the existence of the files), -r (removes a directory and all files within it), and -d (removes an empty directory).
+
+3) Which editor did you choose? Why?
+	- I used VIM because I found it troublesome to press CTRL for every command in emacs. There were also a lot more detailed tutorials online using VIM, so it smoothened my first experience with a text editor, especially on the command line without a GUI.
+
+4) What is your program supposed to do? Did you encounter any problems while developing it? If so, what were they and how did you solve them?
+	- I wrote a simple "Hello, World!" which prints exactly that. For this lab, I focused more on learning how to use the UNIX system and CMD in general, so I did not plan to make the actual C program complicated. The main problem I had was figuring out how to create a new file; it took me an embarrassingly long time to realize it is just "$vim file_name". Nonetheless, I was able to figure it out after some tutorials.
+
+
+Extra Comments: I just wanted to say thank you again for completing the permission number form so quickly for me last quarter. I'm happy to be here in the class and I am excited to learn! The Command Prompt alone was a useful thing for me to learn as an EE.

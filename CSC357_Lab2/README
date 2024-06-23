@@ -1,0 +1,76 @@
+Name: Roy Vicerra (rvicerra)
+
+Special Instructions: I provided a Makefile with targets all, uniq, test, and clean. Additionally. uniq will be made without any target.
+					  To make test, I provided a TestInputFile to demonstrate the program's functionality.
+
+Extra Comments: I tried to implement as much of my own design as I could without fully using your solution from class.
+				It is theoretically slower than yours, but at least it adds some spazazz!
+
+
+Answers to Question Set:
+
+1. Please provide declarations for the following data:
+	a) a pointer cp that points to a char.
+	
+	=>	char *cp;
+
+	b) a pointer ap that points to an array of chars.
+	
+	=>	char *ap;
+
+	c) a pointer pp that points to a ponter that points to an int.
+
+	=>	int **pp;
+
+
+
+2. Is it possible in C to declare and initialize a pointer that points to itself? Why or why not?
+
+	=>	It is possible to declare and initialize a pointer that points to itself, however dereferencing the pointer will lead to unpredicatable outcomes and is generally not good practice. Because the ptr is never defined with an actual value, it can be declared as a pointer of any type. To declare said pointer:
+
+	int *ptr;
+	ptr = &ptr;
+
+
+
+3. What is the fundamental problem with the following code fragment intended to print out a string:
+
+	char s[] = "Hello, world!\n";
+	char *p;
+	for(p = s; p != '\0'; p++)
+		putchar(*p);
+
+What will happen when this is executed? How can it be fixed?
+
+	=> When executed, the program will output "Hello, world!" but then continue to print out unreadable data along with it until it reaches a segmentation fault. This is because the for loop increments the char pointer, p, as long as the pointer itself is never equal to '\0' to indicate the end of the string. This does not work as intended because the pointer will never be equal to a char value as it is only equal to an address in memory, thus producing a trail of random data after the string. 
+
+	To fix this issue, we can change the for loop to have the condition: *p != '\0'. This says that p will increment as long as the char value at the address the pointer points at is not equal to '\0'. By dereferencing the pointer, we can now compare its pointed value instead of its address.
+
+
+
+4. C programmers often say "arrays are the same as pointers". In one sense this is true. In another, more correct, sense they are fundamentally different.
+	a) In what ways is this statement correct?
+
+	=> Arrays are the same as pointers because the name of an array is siply a pointer that points to the first element in the array. It makes sense to relate the two to each other since the array's ability to index elements is based on moving the pointer around and derefencing it.
+
+	b) How is it in error? That is, what makes a pointer fundamentally different from an array?
+
+	=> An array is a data structure that has a fixed size and can only hold elements of the same type. A pointer is merely a variable that can store addresses in memory. Although pointers can be used to create an array, an array itself cannot be used to create a pointer.
+
+
+
+5. In Section 1.7, the argument to perror is defined with the ISO C attribute const, whereas the interger argument to strerror isn't defined with this attribute. Why?
+
+	=> perror is defined with const because it is used to create a prefix to an error message to make error handling easier to read. You would typically use perror when you are aware of a specific hazard that could lead to an error, thus there is no need to modify its input. strerror, on the other hand, outputs the actual error message, which could be different depending on which error the hazard caused. errno, which is associated with the error type, is passed to strerror and thus will be handled for us.
+
+
+
+6. If the calendar time is stored as a signed 32-bit integer, in which year will it overflow? How can we extend the overflow point? Are these strategies compatible with existing applications?
+
+	=> The value of calendar time counts in seconds and starts on 00:00:00 January 1, 1970. The largest number we can get from a signed 32-bit integer is 2,147,483,647. To find the amount of years this is equivalent to, we simply divide that max number by the number of seconds in a year (31,557,600 seconds). This gives us about 68 years; adding that from 1970, we get the year 2038. The calendar time will then overflow after 2038. The only way we can extend the overflow point is by increasing our time_t data type, which holds these values, to a larger bit-width, such as 64-bits. This however would not work on older software that is not designed to hold that big of a bit-width.
+
+
+
+7. A subcase of Ex. 2.2 from Stevens: On unix5, what is the actual data type of a size_t (the type of malloc(3)'s argument)? In what header file is it defined?
+
+	=> By browsing through the stdlib.h and stddef.h manual pages, I have found that size_t is an unsigned integer type. It is defined under the<stddef.h> header file.

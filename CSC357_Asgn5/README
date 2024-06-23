@@ -1,0 +1,10 @@
+Name: Roy Vicerra (rvicerra)
+
+Special Instructions: There are no special instructions.
+			The Makefile includes "make all", "make mytalk",
+			and "make clean". All three options are valid.
+
+Extra Comments: This really was super fun to play around 
+		with once it started working! The only error I
+	        believe I have is that EOF is not caught while in 
+		the window mode, though the exit signal is caught perfectly.

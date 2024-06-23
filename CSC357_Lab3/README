@@ -1,0 +1,5 @@
+Name: Roy Vicerra (rvicerra)
+
+Special Instructions: There are no special instructions to this program.
+
+Extra Comments: I have not completed the assignment. I will use a lateday to finish it, but I am just turning this in now just in case. As of the submission time, my program is able to read all the letters in stdin or a given file and sort them in a linked list by frequency, as well as any special cases where the frequency is equal. For stdin only, however, it is able to create the binary tree with supernodes. I will continue to work on it.

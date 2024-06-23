@@ -1,0 +1,5 @@
+Name: Roy Vicerra (rvicerra)
+
+Special Instructions: You can run "make all", "make mytar", "make clean"from the Makefile. The arguments are passed correctly, however I was only able to implement the Archive Create option.
+
+Extra Comments: This program can only create a TAR. I implemented a printing debugger so at least you can see that it can properly create a TAR.
